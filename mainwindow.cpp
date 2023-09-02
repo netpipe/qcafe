@@ -25,5 +25,7 @@ void MainWindow::on_pushButton_clicked()
     //ui->myImage->setText("going full screen");
     ui->myImage->showMaximized();
     ui->myImage->showFullScreen();
+    ui->myImage->grabKeyboard(); //needs to have an event filter installed
 }
+
 
